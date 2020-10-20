@@ -1,1 +1,0 @@
-from .small_horse import Small_Horse
