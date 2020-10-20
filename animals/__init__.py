@@ -5,6 +5,7 @@ from .donkey import Donkey
 from .fish_with_no_eyes import Fish_With_No_Eyes
 from .goat import Goat
 from .goldfish import Goldfish
+from .goose import Goose
 from .gorgon import Gorgon
 from .jellyfish import Jellyfish
 from .llama import Llama
