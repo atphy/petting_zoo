@@ -27,5 +27,7 @@ varmint_village.add([donkeh, goatse, miss_fuzz, tang, little_sebastian])
 snake_hole.add([steve_url, lucy, euryale, snat_rake, maracas])
 soggy_bottoms.add([fsh, silver, peanut_butter, mallory, jaws])
 
+varmint_village.add_animal_type_check(mav)
+
 for animal in varmint_village.animals:
     print(animal)
