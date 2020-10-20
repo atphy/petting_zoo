@@ -29,7 +29,7 @@ tang = Orangutan("Tang", "orangutan", "midnight", "Tang")
 snat_rake = Rat_Snake("Snat Rake", "rat snake", "Rat Snacks(TM)")
 maracas = Rattlesnake("Maracas", "rattlesnake", "rattlesnacks")
 jaws = Shark("Jaws", "shark", "bigger boats")
-little_sebastian = Small_Horse("Little Sebastian", "small horse", "sunrise", "hay-zelnuts")
+little_sebastian = Small_Horse("Little Sebastian", "small horse", "sunrise", "hay-zelnuts", 2)
 
 varmint_village = PettingZoo("Varmint Village", "cute and fuzzy critters to cuddle")
 snake_hole = SnakePit("The Snake Hole", "unlovable and slithery critters to avoid")
@@ -41,3 +41,9 @@ soggy_bottoms.add([fsh, silver, peanut_butter, mallory, jaws])
 
 for animal in varmint_village.animals:
     print(f'You can find {animal.name} the {animal.species} in {varmint_village.attraction_name}')
+
+little_sebastian.chip_num = 5
+
+print(soggy_bottoms.last_critter_added)
+
+print(little_sebastian.chip_num)

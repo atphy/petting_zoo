@@ -7,3 +7,7 @@ class PettingZoo:
 
     def add(self, animals):
         self.animals.extend(animals)
+
+    @property
+    def last_critter_added(self):
+        return f"The most recent critter added to {self.attraction_name} is {self.animals[-1].full_name}"
