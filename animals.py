@@ -13,9 +13,10 @@ from rat_snake import Rat_Snake
 from rattlesnake import Rattlesnake
 from shark import Shark
 from small_horse import Small_Horse
+from attractions import PettingZoo, SnakePit, Wetlands
 
 steve_url = Copperhead("Steve Url", "copperhead", "snake pellets")
-Lucy = Diamondback("Lucy", "diamondback", "cashews")
+lucy = Diamondback("Lucy", "diamondback", "cashews")
 donkeh = Donkey("Donkeh", "donkey", "morning", "waffles")
 fsh = Fish_With_No_Eyes("Fsh", "fish with no eyes", "carrots")
 goatse = Goat("Goatse", "goat", "afternoon", "goat snacks")
@@ -30,4 +31,13 @@ maracas = Rattlesnake("Maracas", "rattlesnake", "rattlesnacks")
 jaws = Shark("Jaws", "shark", "bigger boats")
 little_sebastian = Small_Horse("Little Sebastian", "small horse", "sunrise", "hay-zelnuts")
 
-print(jaws)
+varmint_village = PettingZoo("Varmint Village", "cute and fuzzy critters to cuddle")
+snake_hole = SnakePit("The Snake Hole", "unlovable and slithery critters to avoid")
+soggy_bottoms = Wetlands("Soggy Bottoms", "wet and wild critters in your area")
+
+varmint_village.add([donkeh, goatse, miss_fuzz, tang, little_sebastian])
+snake_hole.add([steve_url, lucy, euryale, snat_rake, maracas])
+soggy_bottoms.add([fsh, silver, peanut_butter, mallory, jaws])
+
+for animal in varmint_village.animals:
+    print(f'You can find {animal.name} the {animal.species} in {varmint_village.attraction_name}')
